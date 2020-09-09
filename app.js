@@ -16,6 +16,8 @@ app.post('/send', async (req, res) => {
 
     res.json({ success: true });
   } catch (err) {
+    console.log(err)
+    
     res.json({ success: false });
   }
 });
